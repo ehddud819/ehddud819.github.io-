@@ -56,12 +56,19 @@
 
 
 
+
+
+
     </head>
 
 
 
 
     <body>
+
+
+
+    
         <!-- Responsive navbar-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
@@ -83,28 +90,63 @@
 
                 <div class="swiper-slide">
                     <!-- main_첫번째 이미지 부분 -->
-                    <header class="py-5 bg-image-full" style="background-image: url('images/main_balckground.png')">
+                    <header class="py-55 bg-image-full" style="background-image: url('images/main_balckground.png')">
 
                         <div class="text-center my-5">
                             
-                            <img class="img-fluid rounded-circle mb-4" style="top: 25%; position: sticky;" width="30%" src="images/main_dongyoung.png" alt="..." />
-                            <img class="img-fluid rounded-circle mb-4" style="top: 25%; position: sticky;" width="30%" src="images/main_doyeon.png" alt="..." />
+                            <img class="img-fluid rounded-circle mb-4" style="top: 25%; position: sticky;" width="10%" src="images/main_dongyoung.png" alt="..." />
+                            <img class="img-fluid rounded-circle mb-4" style="top: 25%; position: sticky;" width="10%" src="images/main_doyeon.png" alt="..." />
                         
                             <h1 class="text-white fs-3 fw-bolder">김동영 ♥ 김도연</h1>
 
                             <p class="text-white-50 mb-0">Tempus fugit, amor manet</p>
+                            
                         </div>
 
                 </div>
 
+
+
                 <div class="swiper-slide">
-                    <img class="main" style="top: 200%; position: relative;" width="80%"  src="images/main_doyeon.png" alt="..." />
-                    <h3 style=" top: 30%; right: 35%; position: absolute;"> 이름 : 김도연 (89)</h3>
-                
+                    <div>
+                        <img class="main" style="top: 10%; position: static;" width="80%"  src="images/main_doyeon.png" alt="..." />
+                        <h2 style=" top: 100%; right: 35%; position: static;"> 이름 : 김도연 (89)</h2>
+                        <h3>안녕하세요. 이렇게 글로 소개하려고 하니 쑥쓰럽네요. </h3>
+                        <h3>우리가 지금까지 만난 시간이 꽤나 많이 지났는데요.</h3>
+                        <h3>결국 뜻깊은 일로 이렇게 결혼을 한답니다.</h3>
+                        <h3>축하해 주셔서 감사합니다.</h3>
+                        <h5> - 김도연 올림 -</h5>
+                        <br>
+                        <br>
+                        <br>
+                    </div>
+
                 </div>
                 
 
-                <div class="swiper-slide"><img class="img-fluid rounded-circle mb-4" width="350px" src="images/main_dongyoung.png" alt="..." /></div>
+                <div class="swiper-slide">
+                    <div>
+                        <div>
+                        <img class="img-fluid rounded-circle mb-4" width="80%" src="images/main_dongyoung.png" alt="..." /></div>
+
+                        <div>
+                            <h2 style=" top: 100%; right: 35%; position: static;"> 이름 : 김동영 (88)</h2>
+                            <h3>안녕하세요. 이렇게 글로 소개하려고 하니 쑥쓰럽네요. </h3>
+                            <h3>우리가 지금까지 만난 시간이 꽤나 많이 지났는데요.</h3>
+                            <h3>결국 뜻깊은 일로 이렇게 결혼을 한답니다.</h3>
+                            <h3>축하해 주셔서 감사합니다.</h3>
+                            <h5> - 김동영 올림 -</h5>
+                            <br>
+                            <br>
+                            <br>
+
+
+                        </div>
+                    </div>
+
+
+
+                </div>
 
 
 
@@ -121,12 +163,14 @@
 
         </div>
 
-
-        
-
+     
 
 
         </header>
+
+
+
+
         <!-- Content section-->
         <section class="py-5">
             <div class="container my-5">
@@ -139,12 +183,16 @@
                 </div>
             </div>
         </section>
+
+
         <!-- Image element - set the background image for the header in the line below-->
         <div class="py-5 bg-image-full" style="background-image: url('https://source.unsplash.com/4ulffa6qoKA/1200x800')">
             <!-- Put anything you want here! The spacer below with inline CSS is just for demo purposes!-->
             <div style="height: 20rem"></div>
         </div>
         <!-- Content section-->
+
+
         <section class="py-5">
             <div class="container my-5">
                 <div class="row justify-content-center">
@@ -156,6 +204,8 @@
                 </div>
             </div>
         </section>
+
+
         <!-- Footer-->
         <footer class="py-5 bg-dark">
             <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2021</p></div>
@@ -166,6 +216,15 @@
         <script src="js/scripts.js"></script>
 
 
+
+
+<!-- 꽃내리는 효과 -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+    $(window).load(function () {
+        $('container').sakura();
+    });
+    </script>
 
 
 
@@ -199,6 +258,8 @@
         
     </div>
 
+    
+
     <!-- Swiper JS -->
     <script src="js/swiper.min.js"></script>
 
@@ -214,6 +275,10 @@
         });
     
     </script>
+
+
+
+
 
 
 
