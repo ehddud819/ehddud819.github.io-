@@ -70,21 +70,25 @@
 
     
         <!-- Responsive navbar-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container">
-                <a class="navbar-brand" href="#!">우리 결혼합니다.</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">소개의 글</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">장소와 시간</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">연락처</a></li>
-                    </ul>
+        <header class="main_header">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container">
+                    <a class="navbar-brand" href="#!">우리 결혼합니다.</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">소개의 글</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#!">장소와 시간</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#!">연락처</a></li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </nav>
-        <!-- Header - set the background image for the header in the line below-->
+            </nav>
+            <!-- Header - set the background image for the header in the line below-->
+        </header>
 
+
+        
         <div class="swiper-container">
             <div class="swiper-wrapper">
 
@@ -110,10 +114,13 @@
 
 
                 <div class="swiper-slide">
-                    <div>
-                        <img class="main" style="top: 10%; position: static;" width="80%"  src="images/main_doyeon.png" alt="..." />
+                    <div style="height: 100%;"> 
+                        <div>
+                        <img class="main" style="top: 10%; position: static;" width="80%"  src="images/main_doyeon.png" alt="..." /></div>
+                        
+                        <div>
                         <h2 style=" top: 100%; right: 35%; position: static;"> 이름 : 김도연 (89)</h2>
-                        <div style="font-size: 1rem;">  
+                         <div style="font-size: 1rem;">  
                             안녕하세요. 이렇게 글로 소개하려고 하니 쑥쓰럽네요.
                             <br>
                             우리가 지금까지 만난 시간이 꽤나 많이 지났는데요.
@@ -122,10 +129,11 @@
                             <br>
                             축하해 주셔서 감사합니다.xdsf
                             <br>
-                            - 김동영 올림 -                        
+                            - 김도연 올림 -                        
                             <br>
                             <br>
                             <br>
+                        </div>
                         </div>
                     </div>
 
@@ -135,7 +143,7 @@
                 <div class="swiper-slide">
                     <div>
                         <div>
-                        <img class="img-fluid rounded-circle mb-4" width="80%" src="images/main_dongyoung.png" alt="..." /></div>
+                        <img class="main" width="80%" src="images/main_dongyoung.png" alt="..." /></div>
 
                         <div>
                             <h2 style=" top: 100%; right: 35%; position: static;"> 이름 : 김동영 (88)</h2>
@@ -154,8 +162,6 @@
                                 <br>
                             </div>
 
-
-
                         </div>
                     </div>
 
@@ -173,8 +179,6 @@
             <!-- 네비게이션 조절 -->
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>           
-
-
 
         </div>
 
