@@ -4084,10 +4084,10 @@ textarea.form-control-lg {
 
 .navbar-toggler {
   padding: 0.25rem 0.75rem;
-  font-size: 1.25rem;
+  font-size: 1rem;
   line-height: 1;
-  background-color: transparent;
-  border: 1px solid transparent;
+  background-color: rgb(236, 192, 192);
+  border: 0.25px solid transparent;
   border-radius: 0.25rem;
   transition: box-shadow 0.15s ease-in-out;
 }
@@ -4473,7 +4473,7 @@ textarea.form-control-lg {
 }
 
 .navbar-dark .navbar-brand {
-  color: #fff;
+  color: rgb(0, 0, 0);
 }
 .navbar-dark .navbar-brand:hover, .navbar-dark .navbar-brand:focus {
   color: #fff;
@@ -7844,7 +7844,7 @@ textarea.form-control-lg {
 
 .bg-dark {
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
+  background-color: transparent !important;
 }
 
 .bg-black {
@@ -11322,7 +11322,13 @@ textarea.form-control-lg {
  * 
  * Released on: March 10, 2017
  */
- .swiper-container{margin-left:none;margin-right:none;position:relative;overflow:hidden;z-index:0; padding-top: 40px;
+ .swiper-container{
+   margin-left:none;
+   margin-right:none;
+   position:relative;
+   overflow:hidden;
+   z-index:0; 
+   top: -20px;
 }
  .swiper-container-no-flexbox 
  .swiper-slide{float:left }
