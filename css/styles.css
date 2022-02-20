@@ -12128,3 +12128,18 @@ textarea.form-control-lg {
   pointer-events: none;
   position: absolute
 }
+
+
+.main_continue{
+  font-family: 'Black And White Picture', sans-serif;
+  font-size: 1em;
+
+}
+
+.hidden_story{
+  display: none;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center;
+  background-size: cover;
+}
