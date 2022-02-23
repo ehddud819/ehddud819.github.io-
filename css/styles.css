@@ -10,6 +10,11 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+
+ html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -11334,7 +11339,7 @@ textarea.form-control-lg {
  .swiper-container{
    margin-left:none;
    margin-right:none;
-   position:relative;
+   position:fixed;
    overflow:hidden;
    z-index:0; 
    top: -20px;
@@ -12291,8 +12296,8 @@ textarea.form-control-lg {
 }
 
 
-.menu_bar{
-  display: block;
+.menu_bar_content{
+  display: none;
   background-color: lemonchiffon;
   opacity: 50%;
   width: 120px;
@@ -12330,7 +12335,8 @@ textarea.form-control-lg {
 }
 
 .main_contents{
-  background-color:darkgray;
+  background-color: whitesmoke;
+  width: 100%;
 }
 
 .main_background_table{
@@ -12350,14 +12356,30 @@ textarea.form-control-lg {
 #section_11{
   background-color: whitesmoke;
   width: 100%;
-  height: 400vw;
+  height: 380vw;
   position:absolute;
   top: 190vw;
+  opacity: 0.5;
+  
 }
 
-
-
+#section_2{
+  opacity: 10;
+  width: 100%;
+  height: 1000vw;
+  background-color: whitesmoke;
+  margin-top: 60vw;
+}
 
 #container{
 	height:5000px;
+}
+
+.body_context_1{
+  text-align: center;
+}
+
+.body_section{
+  width: 100%;
+  height: 5000vw;
 }
