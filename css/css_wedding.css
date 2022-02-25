@@ -1,0 +1,57 @@
+.body{
+  max-width: 768px;
+}
+
+.swiper {
+  width: 100%;
+  max-width: 768px;
+  /* min-height: 700px; */
+}
+
+.swiper-wrapper {
+  width: 100%;
+  max-width: 768px;
+  height: 100%;
+  max-height: 100%;
+}
+
+.swiper-slide {
+  width: 100%;
+  max-width: 768px;
+  height: 100%;
+  /* min-height: 700px; */
+}
+
+
+.ft-s{
+  font-size: small;
+}
+
+.ft-m{
+  font-size: medium;
+}
+
+.ft-l{
+  font-size: large;
+}
+
+
+
+
+
+
+
+
+
+
+
+.pic_middle{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.text_middle{
+  text-align: center;
+}
