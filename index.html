@@ -11,6 +11,11 @@
         <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 
     <link rel="stylesheet" href="css/css_wedding.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script  src="https://code.jquery.com/jquery-3.6.0.min.js"
+             integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+             crossorigin="anonymous"></script>
 
 
 
@@ -21,6 +26,12 @@
 
 
 <body>
+    <!-- AOS 초기화 함수 -->
+<script> 
+    AOS.init(); 
+</script>
+
+
     <!-- <header><img src="images/concept.jpg" width="100%" style="max-width: 768px; margin-left: auto; margin-right: auto; display: block;" alt=""></header> -->
     <section>
         <!-- Slider main container -->
@@ -89,8 +100,6 @@
                 <div class="swiper-slide"><div class="text_middle" style="width: 100%; height: 333px; display: table-cell;  vertical-align: middle;">dasd</div></div>
                 
                 </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
         
             <!-- If we need navigation buttons -->
             <div class="swiper-button-prev"></div>
@@ -104,11 +113,11 @@
 
 
     <article>
-        <div class="ft-l" style="text-align: center; margin-bottom: 30px; margin-top: 20px;"> Gallery</div>
+        <div class="ft-l" style="text-align: center; margin-bottom: 30px; margin-top: 20px;" data-aos="fade-up" > Gallery</div>
         <!-- 갤러리_1 -->
         <p></p>
-        <div class="swiper swiper_1">
-            <div class="swiper-wrapper">
+        <div class="swiper swiper_1" data-aos="fade-right" data-aos-duration="500">
+            <div class="swiper-wrapper" >
                 <div class="swiper-slide"  style="background-color: aqua;">
                     <div class="gallery"> 컨셉사진_A_1 </div>
                 </div>
@@ -131,7 +140,7 @@
         </div>
         <p></p>
         <!-- 갤러리_2 -->
-        <div class="swiper swiper_2">
+        <div class="swiper swiper_2" data-aos="fade-left" data-aos-duration="500">
             <div class="swiper-wrapper">
                 <div class="swiper-slide"  style="background-color: red">
                     <div class="gallery"> 컨셉사진_B_1 </div>
@@ -155,7 +164,7 @@
         </div>
         <p></p>
         <!-- 갤러리_3 -->
-        <div class="swiper swiper_3">
+        <div class="swiper swiper_3" data-aos="fade-right" data-aos-duration="500">
             <div class="swiper-wrapper">
                 <div class="swiper-slide"  style="background-color: yellow">
                     <div class="gallery"> 컨셉사진_C_1 </div>
@@ -190,7 +199,7 @@
 
 
 
-
+<p></p>
     <div>
         <img src="images/concept.jpg" width="100%" alt="">
     </div>
@@ -220,6 +229,9 @@ const swiper = new Swiper('.swiper', {
   });
   
 </script>
+
+
+
 
 <!-- 갤러리_1 스와이퍼 -->
 <script>
@@ -281,7 +293,7 @@ const swiper = new Swiper('.swiper_1', {
       
     </script>
 
-
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 
 
