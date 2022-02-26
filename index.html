@@ -101,11 +101,97 @@
 
     </section>
 
+
+
+    <article>
+        <!-- 갤러리_1 -->
+        <div class="swiper swiper_1">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"  style="background-color: aqua;">
+                    <div class="gallery"> 컨셉사진_A_1 </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="gallery"> 컨셉사진_A_2 </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="gallery"> 컨셉사진_A_3 </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="gallery"> 컨셉사진_A_4 </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="gallery"> 컨셉사진_A_5 </div>
+                </div>
+            </div>
+
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+        </div>
+        <!-- 갤러리_2 -->
+        <div class="swiper swiper_2">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"  style="background-color: red">
+                    <div class="gallery"> 컨셉사진_B_1 </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="gallery"> 컨셉사진_B_2 </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="gallery"> 컨셉사진_B_3 </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="gallery"> 컨셉사진_B_4 </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="gallery"> 컨셉사진_B_5 </div>
+                </div>
+            </div>
+
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+        </div>
+        <!-- 갤러리_3 -->
+        <div class="swiper swiper_3">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"  style="background-color: yellow">
+                    <div class="gallery"> 컨셉사진_C_1 </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="gallery"> 컨셉사진_C_2 </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="gallery"> 컨셉사진_C_3 </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="gallery"> 컨셉사진_C_4 </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="gallery"> 컨셉사진_C_5 </div>
+                </div>
+            </div>
+
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+        </div>
+
+    </article>
+
+
+
+
+
+
+
+
+
+
+
+
     <div>
         <img src="images/concept.jpg" width="100%" alt="">
     </div>
 
-
+<!-- header 스와이퍼 -->
 <script>
 const swiper = new Swiper('.swiper', {
     // Optional parameters
@@ -131,8 +217,65 @@ const swiper = new Swiper('.swiper', {
   
 </script>
 
+<!-- 갤러리_1 스와이퍼 -->
+<script>
+const swiper = new Swiper('.swiper_1', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+  
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+    
+    // And if we need scrollbar
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+  });
+  
+</script>
 
+<!-- 갤러리_2 스와이퍼 -->
+<script>
+    const swiper = new Swiper('.swiper_2', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+      
+        // If we need pagination
+        pagination: {
+          el: '.swiper-pagination',
+        },
+        
+        // And if we need scrollbar
+        scrollbar: {
+          el: '.swiper-scrollbar',
+        },
+      });
+      
+    </script>
 
+<!-- 갤러리_3 스와이퍼 -->
+<script>
+    const swiper = new Swiper('.swiper_3', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+      
+        // If we need pagination
+        pagination: {
+          el: '.swiper-pagination',
+        },
+        
+        // And if we need scrollbar
+        scrollbar: {
+          el: '.swiper-scrollbar',
+        },
+      });
+      
+    </script>
 
 
 
