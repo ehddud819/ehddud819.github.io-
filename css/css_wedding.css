@@ -21,6 +21,7 @@
   max-width: 768px;
   height: 100%;
   border-radius: 10px;
+  background-color: white;
   /* min-height: 700px; */
 }
 
@@ -101,13 +102,13 @@
 
 
 .txt1{
-  font-size: 6vw;
+  font-size: 2em;
   color: whitesmoke;
   
 }
 
 .txt2{
-  font-size: 4vw;
+  font-size: 2em;
   color: white;
 }
 .txt3{
