@@ -17,6 +17,16 @@
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
         crossorigin="anonymous"></script>
 
+<!-- 폰트_jua -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+
+<!-- 폰트_goegu -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Gaegu&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/css_wedding.css">
 
 
@@ -110,11 +120,17 @@
     <section>
   
         <div class="panel" style=" background-color: whitesmoke; max-width: 768px; display: block; margin-left: auto; margin-right: auto; margin-top: -10px; height: 1000px; width: 100%; z-index: 1;">
-            <p></p>
-            <div class="sorryContent default-size text_middle" >
+            
+            <div class="txt1" >
                 <br>
                 <h1>모시지 못하는 양해의 글</h1>
+            </div>
+            
+            <div class="txt2" >
                 <h3>모든 분들을 모시지 못하여 양해의 말씀을 올립니다.</h3>
+            </div>
+
+            <div class="txt3" >
                 <br>
                 <p>안녕하세요! 김동영 & 김도연 부분입니다.</p>
                 <br>
@@ -129,6 +145,7 @@
                 <p>멋지고 좋은 분들과 부부가 되어가는 과정을 함께하지 못해 아쉽지만</p>
                 <p>멀리서나마 우리의 결혼을 축복해주시면 감사하겠습니다.</p>
             </div>
+            
         </div>
 
     </section>
@@ -334,6 +351,30 @@ const swiper = new Swiper('.swiper_1', {
     
 
     
+</script>
+
+
+
+<!-- 글씨나타나기 -->
+<script>
+
+var txtTimeline = gsap.timeline({
+    scrollTrigger: {
+     trigger : ".txt1",
+     start : "top 90%",
+     end : "top top",
+     markers : true,
+    //  toggleActions : "play reverse none reverse",
+     // markers: {startColor: "red", endColor: "blue", fontSize: "20px"},
+      onLeave: (function() {
+       return console.log("출력");
+      })// gsap 요소를 만들고
+    }
+ });
+ txtTimeline.from('.txt1', { opacity: 0, y: 5, duration : 1})
+ txtTimeline.from('.txt2', { opacity: 0, y: 5, duration : 1.5})
+ txtTimeline.from('.txt3', { opacity: 0, y: 5, duration : 3})
+
 </script>
 
 
