@@ -70,6 +70,23 @@
 }
 
 .sorryContent{
-  margin-top: 80px;
   position:absolute;
 }
+
+.panel{
+  text-align: center;
+  font-family: 'Jua', sans-serif;
+}
+
+.txt1{
+  font-size: 5vw;
+}
+
+.txt2{
+  font-size: 3vw;
+}
+.txt3{
+  font-size: 3vw;
+  font-family: 'Gaegu', cursive;
+}
+
