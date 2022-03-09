@@ -107,7 +107,6 @@
   
 }
 
-
 .txt2{
   font-size: 1.5em;
   color: white;
@@ -116,5 +115,19 @@
   font-size: 1.2em;
   color: white;
   
+}
+
+
+
+
+.map_guide{
+display: block;
+max-width: 735px;
+position: relative;
+margin-left: auto;
+margin-right: auto;
+top: 50px;
+padding-top: 100px;
+background: white
 }
 
