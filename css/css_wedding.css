@@ -74,11 +74,8 @@
   position:absolute;
 }
 
-.panel{
-  text-align: center;
-  font-family: 'Jua', sans-serif;
-
-  /* 이 밑에가 배경 색 변경하는 CSS */
+.back-gradient{
+    /* 이 밑에가 배경 색 변경하는 CSS */
     background: linear-gradient(-45deg, #d9a7c7, #d9a7c7, hsl(32, 72%, 74%), #d9a7c7);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
@@ -95,6 +92,14 @@
   100% {
     background-position: 0% 50%;
   }
+
+}
+
+.panel{
+  text-align: center;
+  font-family: 'Jua', sans-serif;
+
+
 }
 
 
@@ -114,7 +119,9 @@
 .txt3{
   font-size: 1.2em;
   color: white;
-  
+}
+.txt3>p{
+  margin: auto;
 }
 
 
@@ -131,3 +138,20 @@ padding-top: 100px;
 background: white
 }
 
+
+.article{
+  max-width: 768px;
+  height: auto;
+}
+
+.icon img{
+  position: initial
+}
+
+.icon > h3{
+  text-align: left !important;
+}
+
+.h3{
+  text-align: left !important;;
+}
