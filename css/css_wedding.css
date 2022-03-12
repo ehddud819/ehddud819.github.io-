@@ -102,9 +102,13 @@
 .panel{
   text-align: center;
   font-family: 'Jua', sans-serif;
-
-
 }
+
+.panel2{
+  text-align: center;
+  font-family: 'Jua', sans-serif;
+}
+
 
 
 
@@ -164,4 +168,29 @@ background: white
   height: 100vh; 
   height: calc(var(--vh, 1vh) * 100);
 
+}
+
+
+
+/* copy7 용 */
+
+.gallery_last_div {
+  height: 100vh;
+  .zoom {
+    position: relative;
+    margin: 0 auto;
+    width: 900px;
+    height: 900px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    z-index: 900;
+
+    .image {
+      grid-area: 1 / 1 / 2 / 2;
+    }
+  }
 }
