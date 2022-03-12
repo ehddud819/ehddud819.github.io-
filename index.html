@@ -63,7 +63,7 @@
                 <!-- Slides -->
                 <div class="swiper-slide" style="background-color: #f4f2f1;" >
                     <div style="position: relative;">
-                        <div class="pic_middle" ><img src="images/header_pic_1.png" width="100%" height="90%" alt="" style="border-bottom-radius: 2%; width: 100vw; height: 100vh;"></div>
+                        <div class="pic_middle" ><img src="images/header_pic_1.png" width="100%" height="90%" alt="" style="border-bottom-radius: 2%; width: 100vw; height: 95vh;"></div>
 
                         <div style="width: 100%; height: auto; position:absolute; bottom:50px;">
                             <div style="width: 50%; float: left; text-align: center;" ><img src="images/header_pic_3.png" style="width: 65%; height: 100%; margin-bottom: -20px; margin-top: 100px;"  alt=""></div>
@@ -134,7 +134,7 @@
     <!-- 모시는 글 -->
     <section style="position: relatives;">
   
-        <div class="panel back-gradient" style=" background-color: whitesmoke; max-width: 768px; display: block; margin-left: auto; margin-right: auto; height: 100vh; width: 100vw; z-index: 1;">
+        <div class="panel back-gradient" style=" background-color: whitesmoke; max-width: 768px; display: block; margin-left: auto; margin-right: auto; height: 95vh; width: 96vw; z-index: 1;">
             
             <div class="txt1" >
                 <br>
@@ -174,7 +174,7 @@
 
     <!-- 갤러리 -->
     <article style="position: relatives;" >
-        <section class="default-size panel" style="clear: both; background-color: white; width: 100vw; height: 100vh; position: sticky; z-index: 50;  ">
+        <section class="default-size panel" style="clear: both; background-color: white; width: 100vw; height: 95vh; position: sticky; z-index: 50;  ">
             <div class="ft-l default-size" style="text-align: center; margin-bottom: 15px; font-size: 50px; font-family: 'Do Hyeon', sans-serif;"> Gallery</div>
             <!-- 갤러리_1 -->
             <p></p>
@@ -260,7 +260,7 @@
     <!-- 오시는길안내 페이지 -->
     <section style="position: relatives;">
         <div>
-            <div class="panel" style="position: sticky; z-index: 80; background-color: whitesmoke; margin-top: 10px; width: 100vw; height: 100vh;">
+            <div class="panel" style="position: sticky; z-index: 80; background-color: whitesmoke; margin : 10px, 10px, 10px;  width: 100vw; height: 100vh;">
 
                 <div style="position: relative;"> 
                     <br>
@@ -411,8 +411,8 @@ const swiper = new Swiper('.swiper_1', {
         snap: {
         snapTo: 1, // snap to the closest label in the timeline
         duration: {min: 0.1, max: 0.8}, // the snap animation should be at least 0.2 seconds, but no more than 3 seconds (determined by velocity)
-        delay: 0.1, // wait 0.2 seconds from the last scroll event before doing the snapping
-        ease: "power1.inOut" // the ease of the snap animation ("power3" by default)
+        delay: NaN, // wait 0.2 seconds from the last scroll event before doing the snapping
+        ease: "power2.inOut" // the ease of the snap animation ("power3" by default)
       },
         pinSpacing: false });
         
