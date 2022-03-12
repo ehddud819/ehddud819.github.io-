@@ -17,12 +17,15 @@
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
         crossorigin="anonymous"></script>
 
+
+
+<!-- 폰트_goegu -->
+
         <!-- font-family: 'Jua', sans-serif; -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
 
-<!-- 폰트_goegu -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Gaegu&display=swap" rel="stylesheet">
@@ -51,7 +54,7 @@
 
 
 
-<body style="   scroll-snap-type: y mandatory;">
+<body>
     <!-- <header><img src="images/concept.jpg" width="100%" style="max-width: 768px; margin-left: auto; margin-right: auto; display: block;" alt=""></header> -->
     
     <!-- 첫 메인 스와이퍼 -->
@@ -63,7 +66,7 @@
                 <!-- Slides -->
                 <div class="swiper-slide" style="background-color: #f4f2f1;" >
                     <div style="position: relative;">
-                        <div class="pic_middle openSize" ><img src="images/header_pic_1.png" width="100px" height="100%" alt="" style="width: 95vw; "></div>
+                        <div class="pic_middle openSize" ><img src="images/header_pic_1.png" width="100%" height="100%" alt=""></div>
 
 
 
@@ -177,7 +180,7 @@
 
     <!-- 갤러리 -->
     <article style="position: relatives;" >
-        <section class="default-size panel" style="clear: both; background-color: white; width: 95vw; position: sticky; z-index: 50; height: 100vh;  ">
+        <section class="default-size panel2" style="clear: both; background-color: white; width: 95vw; position: sticky; z-index: 50; height: 100%;  ">
             <div class="ft-l default-size" style="text-align: center; margin-bottom: 15px; font-size: 50px; font-family: 'Do Hyeon', sans-serif;"> Gallery</div>
             <!-- 갤러리_1 -->
             <p></p>
@@ -259,9 +262,24 @@
     </article>
 
 
+    <!-- 갤러지_마지막 -->
+    <nav class="panel defailt_size" style="z-index: 50;">
+
+        <section class="gallery_last_div" id="header-zoom" >
+            <div class="zoom">
+              <div class="image gallery_main">
+            <img src="images/gallery_main.jpg" width="100%" alt="" style="max-width: 768px; z-index: 50;">
+                </div>
+        
+              </div>
+          </section>
+
+    </nav>
+
+
 
     <!-- 오시는길안내 페이지 -->
-    <section style="position: relatives;">
+    <section style="position: relatives; ">
         <div>
             <div class="panel" style="position: sticky; z-index: 80; background-color: whitesmoke; width: 95vw; height: 100vh;">
 
@@ -335,9 +353,6 @@ const swiper = new Swiper('.swiper', {
   });
   
 </script>
-
-
-
 
 <!-- 갤러리_1 스와이퍼 -->
 <script>
@@ -428,8 +443,6 @@ const swiper = new Swiper('.swiper_1', {
     
 </script>
 
-
-
 <!-- 글씨나타나기 -->
 <script>
 
@@ -438,7 +451,6 @@ var txtTimeline = gsap.timeline({
      trigger : ".txt1",
      start : "top 80%",
      end : "top top",
-     markers : true,
     //  toggleActions : "play reverse none reverse",
      // markers: {startColor: "red", endColor: "blue", fontSize: "20px"},
       onLeave: (function() {
@@ -467,7 +479,55 @@ window.addEventListener('resize', () => {
 });
 
 
+</script>
+
+
+
+
+
+
+
+<script>
+
+    gsap.registerPlugin(ScrollTrigger);
+  
+  ScrollTrigger.defaults({
+    // Defaults are used by all ScrollTriggers
+    toggleActions: "restart pause resume pause", // Scoll effect Forward, Leave, Back, Back Leave
+    markers: true // Easaly remove markers for production 
+  });
+  
+  const timelineHeader = gsap.timeline({
+    scrollTrigger: {
+      id: "ZOOM", // Custom label to the marker
+      trigger: "#header-zoom", // What element triggers the scroll
+      scrub: 0.5, // Add a small delay of scrolling and animation. `true` is direct
+      start: "top top", // Start at top of Trigger and at the top of the viewport
+      end: "+=100% 50px", // The element is 500px hight and end 50px from the top of the viewport
+          pin: true, // Pin the element true or false
+      pinSpacing: false
+    }
+  });
+  
+  timelineHeader
+    .to(".gallery_main", {
+      scale: 0.5
+    }, "sameTime")
+    
+    .to(".gallery_main", {
+      opacity : 0
+    }, "sameTime")
+    
+  </script>
+  
+
+
+
+
 
 
 </body>
+
+
+
 </html>
