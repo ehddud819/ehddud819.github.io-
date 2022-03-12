@@ -1,5 +1,7 @@
 .body{
   max-width: 768px;
+  overflow-y: scroll;
+  height: 100vh;
 }
 
 .swiper {
@@ -80,6 +82,8 @@
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
     height: 100vh;
+    
+    
 }
 
 @keyframes gradient {
@@ -98,6 +102,7 @@
 .panel{
   text-align: center;
   font-family: 'Jua', sans-serif;
+  margin : 10px, 10px, 10px;
 
 
 }
@@ -154,4 +159,10 @@ background: white
 
 .h3{
   text-align: left !important;;
+}
+
+.openSize{
+  height: 100vh; 
+  height: calc(var(--vh, 1vh) * 100);
+
 }
