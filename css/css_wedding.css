@@ -81,7 +81,7 @@
     background: linear-gradient(-45deg, #d9a7c7, #d9a7c7, hsl(32, 72%, 74%), #d9a7c7);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
-    height: 100vh;
+    height: 100px;
     
     
 }
@@ -142,7 +142,6 @@ position: relative;
 margin-left: auto;
 margin-right: auto;
 top: 50px;
-padding-top: 100px;
 background: white
 }
 
@@ -175,6 +174,49 @@ background: white
 /* copy7 용 */
 
 .gallery_last_div {
+  height: 100vh;
+  .zoom {
+    position: relative;
+    margin: 0 auto;
+    width: 900px;
+    height: 900px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    z-index: 900;
+
+    .image {
+      grid-area: 1 / 1 / 2 / 2;
+    }
+  }
+}
+
+
+.gallery_last_div_1 {
+  height: 100vh;
+  .zoom {
+    position: relative;
+    margin: 0 auto;
+    width: 900px;
+    height: 900px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    z-index: 900;
+
+    .image {
+      grid-area: 1 / 1 / 2 / 2;
+    }
+  }
+}
+
+.gallery_last_div_2 {
   height: 100vh;
   .zoom {
     position: relative;
