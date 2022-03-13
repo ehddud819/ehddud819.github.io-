@@ -263,25 +263,53 @@
 
 
     <!-- 갤러지_마지막 -->
-    <nav class="panel defailt_size" style="z-index: 50;">
+    <nav class="defailt_size" style="z-index: 150; text-align: center;">
 
-        <section class="gallery_last_div" id="header-zoom" >
-            <div class="zoom">
-              <div class="image gallery_main">
-            <img src="images/gallery_main.jpg" width="100%" alt="" style="max-width: 768px; z-index: 50;">
+        <section class="gallery_last_div" id="header-zoom" style="z-index: 150;" >
+            <div class="zoom" style="z-index: 150; ">
+              <div class="image gallery_main" style="z-index: 150; ">
+            <img src="images/gallery_main.jpg" width="100%" alt="" style="max-width: 768px;">
                 </div>
         
               </div>
           </section>
 
+
+
+      <!-- #2 -->
     </nav>
+    <div style="height: 200px;"></div>
+    
+    <nav class="defailt_size" style="z-index: 160; text-align: center;">
+        <section class="gallery_last_div_1" id="header-zoom_1" style="position: relative; z-index: 160;">
+            <div class="zoom_1" style="z-index: 160;">
+              <div class="image gallery_main_1">              
+                <img src="images/gallery_main.jpg" width="100%" alt="" style="max-width: 768px;">
+              </div>
+            </div>
+        
+          </section>
+    </nav>
+
+      <!-- #3 -->
+    <nav class="panel defailt_size" style="z-index: 160; text-align: center;">
+      <section class="gallery_last_div_2" id="header-zoom_2" style="position: relative; z-index: 160;">
+          <div class="zoom_2" style="z-index: 160;">
+            <div class="image gallery_main_2">              
+              <img src="images/gallery_main.jpg" width="100%" alt="" style="max-width: 768px;">
+            </div>
+          </div>
+      
+        </section>
+    </nav>
+
 
 
 
     <!-- 오시는길안내 페이지 -->
     <section style="position: relatives; ">
         <div>
-            <div class="panel" style="position: sticky; z-index: 80; background-color: whitesmoke; width: 95vw; height: 100vh;">
+            <div class="panel" style="position: sticky; z-index: 200; background-color: whitesmoke; width: 95vw; height: 100vh;">
 
                 <div style="position: relative;"> 
                     <br>
@@ -465,8 +493,8 @@ var txtTimeline = gsap.timeline({
 </script>
 
 
+<!-- 초기 화면조정 -->
 <script> let vh = window.innerHeight * 0.01; document.documentElement.style.setProperty('--vh', `${vh}px`); </script>
-
 <script> 
     
     let vh = window.innerHeight * 0.01; document.documentElement.style.setProperty('--vh', `${vh}px`); 
@@ -483,10 +511,7 @@ window.addEventListener('resize', () => {
 
 
 
-
-
-
-
+<!-- 갤러리 마지막 스크립트 -->
 <script>
 
     gsap.registerPlugin(ScrollTrigger);
@@ -503,7 +528,7 @@ window.addEventListener('resize', () => {
       trigger: "#header-zoom", // What element triggers the scroll
       scrub: 0.5, // Add a small delay of scrolling and animation. `true` is direct
       start: "top top", // Start at top of Trigger and at the top of the viewport
-      end: "+=100% 50px", // The element is 500px hight and end 50px from the top of the viewport
+      end: "bottom 20%", // The element is 500px hight and end 50px from the top of the viewporttop
           pin: true, // Pin the element true or false
       pinSpacing: false
     }
@@ -517,10 +542,80 @@ window.addEventListener('resize', () => {
     .to(".gallery_main", {
       opacity : 0
     }, "sameTime")
+
+
+    
+    
+  </script>
+
+
+<!-- 갤러리 마지막 스크립트_1 -->
+<script>
+
+    gsap.registerPlugin(ScrollTrigger);
+  
+  ScrollTrigger.defaults({
+    // Defaults are used by all ScrollTriggers
+    toggleActions: "restart pause resume pause", // Scoll effect Forward, Leave, Back, Back Leave
+    markers: true // Easaly remove markers for production 
+  });
+  
+  const timelineHeader2 = gsap.timeline({
+    scrollTrigger: {
+      id: "zoom_1", // Custom label to the marker
+      trigger: "#header-zoom_1", // What element triggers the scroll
+      scrub: 0.5, // Add a small delay of scrolling and animation. `true` is direct
+      start: "top top", // Start at top of Trigger and at the top of the viewport
+      end: "bottom center", // The element is 500px hight and end 50px from the top of the viewport
+          pin: true, // Pin the element true or false
+      pinSpacing: false
+    }
+  });
+  
+  timelineHeader2
+    .to(".gallery_main_1", {
+      scale: 0.8
+    }, "sameTime")
+    
+    .to(".gallery_main_1", {
+      opacity : 0
+    }, "sameTime")
     
   </script>
   
+<!-- 갤러리 마지막 스크립트_2 -->
+<script>
 
+  gsap.registerPlugin(ScrollTrigger);
+
+ScrollTrigger.defaults({
+  // Defaults are used by all ScrollTriggers
+  toggleActions: "restart pause resume pause", // Scoll effect Forward, Leave, Back, Back Leave
+  markers: true // Easaly remove markers for production 
+});
+
+const timelineHeader3 = gsap.timeline({
+  scrollTrigger: {
+    id: "zoom_2", // Custom label to the marker
+    trigger: "#header-zoom_2", // What element triggers the scroll
+    scrub: 0.5, // Add a small delay of scrolling and animation. `true` is direct
+    start: "top top", // Start at top of Trigger and at the top of the viewport
+    end: "bottom center", // The element is 500px hight and end 50px from the top of the viewport
+        pin: true, // Pin the element true or false
+    pinSpacing: false
+  }
+});
+
+timelineHeader3
+  .to(".gallery_main_2", {
+    scale: 0.8
+  }, "sameTime")
+  
+  .to(".gallery_main_2", {
+    opacity : 0
+  }, "sameTime")
+  
+</script>
 
 
 
