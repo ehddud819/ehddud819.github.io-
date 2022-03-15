@@ -278,7 +278,8 @@
 
         <section class="gallery_last_div" id="header-zoom" style="z-index: 150;" >
             <div class="zoom" style="z-index: 150; ">
-              <div class="image gallery_main" style="z-index: 150; ">
+                <div class="gallery_text basic_font" style="position: absolute; width: 100%;   height: 50px; text-align: center; font-size: 50px; opacity: 0; top: 150px;">여기까지 감사합니다!!!</div>
+              <div class="image gallery_main" style="z-index: 150; ">                
             <img src="images/gallery_main.jpg" width="100%" alt="" style="max-width: 768px;">
                 </div>
         
@@ -567,13 +568,16 @@ window.addEventListener('resize', () => {
   
   timelineHeader
     .to(".gallery_main", {
-      scale: 0.1
+      scale: 0.9
     }, "sameTime")
     
     .to(".gallery_main", {
       opacity : 0
-    }, "sameTime")
+    }, )
 
+    .to(".gallery_text", {
+      opacity : 1
+    }, 1.1)
 
     
     
