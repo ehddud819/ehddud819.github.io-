@@ -67,7 +67,6 @@
 .default-size{
   width: 100%;
   max-width: 768px;
-  display: block;
   margin-left: auto;
   margin-right: auto;
 }
