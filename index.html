@@ -320,52 +320,47 @@
         </div>
     </section>
 
-
     <p></p>
+
+
+
     <!-- 마지막 메시지 -->
-    <section style="position: relative; margin-top: 1200px; z-index: 300; background-color: #009251;">
+    <section style="position: relative; margin-top: 1250px; z-index: 300;">
  
 
-    <div>
+    
 
-      <button class="btn-etc" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-        <img  src="images/sendMassage.png" alt="" style="width:200px; height:100%;" >
-      </button>
-      <div class="collapse default-size" id="collapseExample">
-        <div class="well">
-          안녕하세요 김동영입니다 여기에 메시지를 보내주세요
-        </div>
-            <div>
-                <div>
-                    <div>
-                        <img src="images/header_pic_2.png" width="150px" height="150px" alt="">
-                    </div>
-                    <div>
-                        <img src="images/header_pic_3.png" width="150px" height="150px" alt="">
-                    </div>
-                </div>
+        <button class="btn-etc" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+            <img  src="images/sendMassage.png" alt="">
+          </button>
+          <div class="collapse default-size" id="collapseExample">
+            <div class="well">
+              안녕하세요 김동영입니다 여기에 메시지를 보내주세요
             </div>
-        </div>
-    </div>
-      
+                    <div style="text-align: center;">
+                        <div >
+                            <img src="images/header_pic_2.png" width="150px" height="150px" alt="" >
+                            <img src="images/header_pic_3.png" width="150px" height="150px" alt="" >
+                        </div>
+                    </div>
+          </div>
+     
 
 
 
     
-    <button class="btn-etc" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-        <img  src="images/sendMoney.png" style="width:200px; height:100%;" alt="">
+    <button class="btn-etc" type="button" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
+        <img  src="images/sendMoney.png" alt="">
       </button>
-      <div class="collapse default-size" id="collapseExample">
+      <div class="collapse default-size" id="collapseExample2">
         <div class="well">
           안녕하세요 김동영입니다 여기에 메시지를 보내주세요
         </div>
             <div>
-                <div>
-                    <div>
-                        <img src="images/header_pic_2.png" width="150px" height="150px" alt="">
-                    </div>
-                    <div>
-                        <img src="images/header_pic_3.png" width="150px" height="150px" alt="">
+                <div style="text-align: center;">
+                    <div >
+                        <img src="images/header_pic_2.png" width="150px" height="150px" alt="" >
+                        <img src="images/header_pic_3.png" width="150px" height="150px" alt="" >
                     </div>
                 </div>
             </div>
@@ -375,6 +370,10 @@
     
     </section>
       
+
+
+
+
 
 
 
@@ -522,7 +521,7 @@ var txtTimeline = gsap.timeline({
 
 
 <!-- 초기 화면조정 -->
-<script> let vh= window.innerHeight * 0.01; document.documentElement.style.setProperty('--vh', `${vh}px`); </script>
+<script> let vh = window.innerHeight * 0.01; document.documentElement.style.setProperty('--vh', `${vh}px`); </script>
 <script> 
     
     let vh = window.innerHeight * 0.01; document.documentElement.style.setProperty('--vh', `${vh}px`); 
@@ -577,14 +576,7 @@ window.addEventListener('resize', () => {
   </script>
 
 
-<!-- 콜랩스 스크립트 -->
-<script>
-    $('.collapse').collapse()
 
-    $('#myCollapsible').collapse({
-  toggle: false
-})
-</script>
 
 
 
