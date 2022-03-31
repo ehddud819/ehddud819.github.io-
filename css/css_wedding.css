@@ -118,19 +118,20 @@
 
 
 
-.txt1{
-  font-size: 1.5em;
-  color: whitesmoke;
-  
+.txt1 > h1{
+  font-size: 2em;
+  color: black;
+  font-size-adjust: ;   
 }
 
-.txt2{
+.txt2 h3{
   font-size: 1.5em;
-  color: white;
+  color: black;
+  text-align: left;
 }
 .txt3{
   font-size: 1.2em;
-  color: white;
+  color: black;
 }
 .txt3>p{
   margin: auto;
@@ -212,3 +213,17 @@ background: white
 
 }
 
+
+.g1{
+  
+}
+.g2{
+
+}
+.g3{
+
+}
+
+.g4{
+  
+}
