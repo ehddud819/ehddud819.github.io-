@@ -236,20 +236,18 @@ background: white
 .gtxt6{}
 
 .form-background{
-  background-color: whitesmoke;
-  padding: 30px;
 }
 
 .form-white{
   background-color: white;
-  padding: 30px;
+  padding: 10px;
   width: 80%;
   max-width: 735px;
   margin: auto;
 }
 
 .form-input{
-  padding: 10px;
+  padding: 15px;
   font-size: 5px;
   border: 1px solid black;
   border-radius: 5px;
@@ -258,7 +256,7 @@ background: white
 }
 
 .form-buttom{
-  padding: 10px;
+  padding: 15px;
   
 }
 
@@ -272,7 +270,7 @@ background: white
 }
 
 .h-50{
-  height: 150px;
+  height: 100px;
 }
 
 button {
