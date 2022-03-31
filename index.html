@@ -224,7 +224,7 @@
             <div class="ft-l default-size" style="text-align: center; margin-bottom: 15px; font-size: 50px; font-family: 'Do Hyeon', sans-serif;"> Gallery</div>
             <!-- 갤러리_1 -->
             <p></p>
-            <div class="swiper swiper_1">
+            <div class="swiper swiper_1 g1">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <img src="images/gallery_A_1.png" width="100%" alt="">
@@ -249,7 +249,7 @@
 
             <p></p>
             <!-- 갤러리_2 -->
-            <div class="swiper swiper_2">
+            <div class="swiper swiper_2 g2">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                          <img src="images/gallery_B_1.png" width="100%" alt="">
@@ -275,7 +275,7 @@
 
             <p></p>
             <!-- 갤러리_3 -->
-            <div class="swiper swiper_3">
+            <div class="swiper swiper_3 g3">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <img src="images/gallery_C_1.png" width="100%" alt="">
@@ -303,7 +303,7 @@
 
 
     <!-- 갤러지_마지막 -->
-    <nav class="default-size" style="position: relative; text-align: center;">
+    <nav class="default-size g4" style="position: relative; text-align: center;">
 
         <section class="gallery_last_div" id="header-zoom" style="z-index: 150;" >
             <div class="zoom" style="z-index: 150; ">
@@ -554,8 +554,8 @@ var txtTimeline = gsap.timeline({
     }
  });
  txtTimeline.from('.txt1', { opacity: 0, y: 5, duration : 1})
- txtTimeline.from('.txt2', { opacity: 0, y: 5, duration : 1.5})
- txtTimeline.from('.txt3', { opacity: 0, y: 5, duration : 1.5})
+ txtTimeline.from('.txt2', { opacity: 0, y: 5, duration : 1})
+ txtTimeline.from('.txt3', { opacity: 0, y: 5, duration : 1})
 
 </script>
 
@@ -618,12 +618,48 @@ window.addEventListener('resize', () => {
     
   </script>
 
+<script>
 
+gsap.registerPlugin(ScrollTrigger);
+gsap.from(".g1", {
+  scrollTrigger: {
+    trigger: ".g1",
+    toggleActions: "restart pause restart pause"
+  },
+  x: 100 })
+</script>
 
+<script>
+gsap.registerPlugin(ScrollTrigger);
+gsap.from(".g2", {
+  scrollTrigger: {
+    trigger: ".g2",
+    toggleActions: "restart pause restart pause"
+  },
+  x: -100 })
+</script>
 
+<script>
 
+gsap.registerPlugin(ScrollTrigger);
+gsap.from(".g3", {
+  scrollTrigger: {
+    trigger: ".g3",
+    toggleActions: "restart pause restart pause"
+  },
+  x: 100 })
+</script>
 
+<script>
 
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.from(".g4", {
+      scrollTrigger: {
+        trigger: ".g4",
+        toggleActions: "restart pause restart pause"
+      },
+      y: 100 })
+    </script>
 </body>
 
 
