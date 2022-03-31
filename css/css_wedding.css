@@ -234,3 +234,52 @@ background: white
 .gtxt4{}
 .gtxt5{}
 .gtxt6{}
+
+.form-background{
+  background-color: whitesmoke;
+  padding: 30px;
+}
+
+.form-white{
+  background-color: white;
+  padding: 30px;
+  width: 80%;
+  max-width: 735px;
+  margin: auto;
+}
+
+.form-input{
+  padding: 10px;
+  font-size: 5px;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-sizing: border-box;
+
+}
+
+.form-buttom{
+  padding: 10px;
+  
+}
+
+.textarea{
+  box-sizing: border-box;
+}
+
+.w-100{
+  width: 80%;
+  max-width: 735px;
+}
+
+.h-50{
+  height: 150px;
+}
+
+button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0;
+}
