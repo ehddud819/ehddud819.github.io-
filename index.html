@@ -352,7 +352,23 @@
                             <img src="images/header_pic_2.png" width="150px" height="150px" alt="" >
                             <img src="images/header_pic_3.png" width="150px" height="150px" alt="" >
                         </div>
-                        [메시지를 작성해주세요!!]
+                        <div class="form-background">
+                          <div class="form-white">
+
+                            <form>
+                              <h3>메시지를 작성해주세요!</h3>
+                              <p>보내는 사람</p>
+                               <div >
+                                <input class="form-input w-100" placeholder="이름을 입력해주세요." type="text">
+                              </div>
+                              <br>
+                                <textarea class="form-textarea w-100 h-50" placeholder="메시지를 입력해주세요."></textarea>
+                                <button type="button" class="btn btn-primary">보내기</button>
+                              </div>
+                            </form>
+
+                          </div> 
+                        </div>
                     </div>
           </div>
      
@@ -365,13 +381,63 @@
       </button>
       <div class="collapse default-size" id="collapseExample2">
         <div class="well">
-          안녕하세요 김동영입니다 여기에 메시지를 보내주세요
+          마음을 전하는 곳
         </div>
             <div>
                 <div style="text-align: center;">
                     <div >
-                        <img src="images/header_pic_2.png" width="100vw" height="150px" alt="" >
-                        <img src="images/header_pic_3.png" width="150px" height="150px" alt="" >
+                      <button class="btn-etc" type="button" data-toggle="collapse" data-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample4">
+                        <img  src="images/header_pic_2.png"width="150px" height="150px" alt="">
+                      </button>
+                      <button class="btn-etc" type="button" data-toggle="collapse" data-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample4">
+                        <img  src="images/header_pic_3.png"width="150px" height="150px" alt="">
+                      </button>
+                    </div>
+
+                    <div class="collapse default-size" id="collapseExample3">
+                      <div class="panel-default">
+                        <div class="panel-heading">신부측 계좌번호</div>
+                        <div class="panel-body">
+                          <li style="text-align: left;">예금주 : 김도연 </li>
+                          <br>
+                          <div class="input-group">
+                            <div type="text" class="form-control" placeholder="Recipient's username" aria-describedby="basic-addon2"> 카카오뱅크 3333176710636</div>
+                            <span class="input-group-addon" id="basic-addon2"><button id="copybtn1" onclick="copyToClipboard();" title="복사하기">복사하기</button></span>
+                          </div>
+                          <br>
+                          <br>
+                          <li style="text-align: left;">예금주 : 김도연_(부)김은권 • (모)김민서 </li>
+                          <br>
+                          <div class="input-group">
+                            
+                            <div type="text" class="form-control" placeholder="Recipient's username" aria-describedby="basic-addon2"> 카카오뱅크 3333229891144 </div>
+                            <span class="input-group-addon" id="basic-addon2"><button id="copybtn2" onclick="copyToClipboard();" title="복사하기">복사하기</button></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <br>
+                    <div class="collapse default-size" id="collapseExample4">
+                      <div class="panel-default">
+                        <div class="panel-heading">신랑측 계좌번호</div>
+                        <div class="panel-body">
+                          <div class="input-group">
+                            <div type="text" class="form-control" placeholder="Recipient's username" aria-describedby="basic-addon2"> 기업은행 01087015266 (예금주 : 김영태)</div>
+                            <span class="input-group-addon" id="basic-addon2"><button id="copybtn3" onclick="copyToClipboard();" title="복사하기">복사하기</button></span>
+                          </div>
+                          <br>
+
+                          <div class="input-group">
+                            <div type="text" class="form-control" placeholder="Recipient's username" aria-describedby="basic-addon2"> 우리은행 1002-256-078897 (예금주 : 김동영)</div>
+                            <span class="input-group-addon" id="basic-addon2"><button id="copybtn4" onclick="copyToClipboard();" title="복사하기">복사하기</button></span>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+
+
+
                     </div>
                 </div>
             </div>
@@ -735,6 +801,71 @@ gsap.from(".g3", {
       },
       y: 100 })
     </script>
+
+<script>
+  function copyToClipboard(val) {
+  var t = document.createElement("textarea");
+  document.body.appendChild(t);
+  t.value = val;
+  t.select();
+  document.execCommand('copy');
+  document.body.removeChild(t);
+  }
+
+  $('#copybtn1').click(function() {
+    copyToClipboard('카카오뱅크 3333176710636');
+    alert('카카오뱅크 3333176710636 복사');
+  });
+</script>
+
+<script>
+  function copyToClipboard(val) {
+  var t = document.createElement("textarea");
+  document.body.appendChild(t);
+  t.value = val;
+  t.select();
+  document.execCommand('copy');
+  document.body.removeChild(t);
+  }
+
+  $('#copybtn2').click(function() {
+    copyToClipboard('카카오뱅크 3333229891144');
+    alert('카카오뱅크 3333229891144 복사');
+  });
+</script>
+
+<script>
+  function copyToClipboard(val) {
+  var t = document.createElement("textarea");
+  document.body.appendChild(t);
+  t.value = val;
+  t.select();
+  document.execCommand('copy');
+  document.body.removeChild(t);
+  }
+
+  $('#copybtn3').click(function() {
+    copyToClipboard('기업은행 01087015266 ');
+    alert('기업은행 01087015266 복사');
+  });
+</script>
+
+<script>
+  function copyToClipboard(val) {
+  var t = document.createElement("textarea");
+  document.body.appendChild(t);
+  t.value = val;
+  t.select();
+  document.execCommand('copy');
+  document.body.removeChild(t);
+  }
+
+  $('#copybtn4').click(function() {
+    copyToClipboard('우리은행 1002-256-078897');
+    alert('우리은행 1002-256-078897 복사');
+  });
+</script>
+
 </body>
 
 
