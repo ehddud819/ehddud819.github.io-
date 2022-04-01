@@ -56,7 +56,7 @@
             fallSpeed: 1,
             maxSize: 14,
             minSize: 9,
-            newOn: 200,
+            newOn: 500,
             swayAnimations: ['sway-0', 'sway-1', 'sway-2', 'sway-3', 'sway-4', 'sway-5', 'sway-6', 'sway-7', 'sway-8']
         };
 
@@ -127,4 +127,3 @@
         requestAnimationFrame(petalCreator);
     };
 }(jQuery));
-
