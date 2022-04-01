@@ -670,6 +670,22 @@ window.addEventListener('resize', () => {
 </script>
 
 
+<script> let vw = window.innerHeight * 0.01; document.documentElement.style.setProperty('--vw', `${vw}px`); </script>
+<script> 
+    
+    let vw = window.innerHeight * 0.01; document.documentElement.style.setProperty('--vw', `${vw}px`); 
+
+// We listen to the resize event
+window.addEventListener('resize', () => {
+  // We execute the same script as before
+  let vw = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty('--vw', `${vw}px`);
+});
+
+
+</script>
+
+
 
 <!-- 갤러리 마지막 스크립트 -->
 <script>
