@@ -12,6 +12,7 @@ html{
   width: 95vw;
   max-width: 768px;
   /* min-height: 700px; */
+  overflow-x: hidden;
 }
 
 .swiper-wrapper {
