@@ -56,7 +56,7 @@
             fallSpeed: 1,
             maxSize: 14,
             minSize: 9,
-            newOn: 300,
+            newOn: 200,
             swayAnimations: ['sway-0', 'sway-1', 'sway-2', 'sway-3', 'sway-4', 'sway-5', 'sway-6', 'sway-7', 'sway-8']
         };
 
@@ -68,7 +68,7 @@
         var sakura = $('<div class="' + options.className + '" />');
 
         // Set the overflow-x CSS property on the body to prevent horizontal scrollbars.
-        $('sakura_wrap').css({ 'overflow-x': 'hidden' });
+        $('body').css({ 'overflow-x': 'hidden' });
 
         // Function that inserts new petals into the document.
         var petalCreator = function () {
