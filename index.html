@@ -35,6 +35,9 @@
       <link rel="stylesheet" href="css/jquery-sakura.css">
       <script src="js/jquery.min.js"></script>
 
+      <!-- 팬시박스 -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" type="text/css" media="screen" />
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
 
 
 
@@ -109,13 +112,13 @@
                         
                         <div class="text_middle">
                         <h3>신부 : 김도연(89)</h3>
-                        안녕하세요. 
+                        안녕하세요. 김도연입니다.
                         <br>
-                        우리가 지금까지 만난 시간이 꽤나 많이 지났는데요.
+                        돌이켜 보면 이렇게 오랜시간 만나게 된것도 신기하지만
                         <br>
                         결국 뜻깊은 일로 이렇게 결혼을 한답니다.
                         <br>
-                        축하해 주셔서 감사합니다.xdsf
+                        축하해 주셔서 감사합니다.(샘플)
                         <br>
                         - 김도연 올림 -                        
                         <br>
@@ -151,7 +154,11 @@
                         <br>
                     </div>   
                 </div>
-                <div class="swiper-slide"><div class="text_middle pic_middle" style="width: 90%; height: 333px; margin-left: auto; margin-right: auto; margin-top: 10vh; "><iframe id="video" width="100%" height="400" src="https://player.vimeo.com/video/693900684?title=0&amp;byline=0&amp;portrait=0" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" data-ready="true"></iframe></div></div>
+                <div class="swiper-slide">
+                  <div class="text_middle pic_middle" style="width: 90%; height: 333px; margin-left: auto; margin-right: auto; margin-top: 10vh; ">
+                    <iframe id="video" width="100%" height="400" src="https://player.vimeo.com/video/693900684?title=0&amp;byline=0&amp;portrait=0" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" data-ready="true"></iframe>
+                  </div>
+                </div>
                 
                 </div>
         
@@ -277,7 +284,15 @@
                          <img src="images/gallery_B_1.png" width="100%" alt="">
                     </div>
                     <div class="swiper-slide">
-                        <div class="gallery"> 컨셉사진_B_2 </div>
+                        <div class="gallery"> 
+                          <a href="images/gallery_B_1.png" data-fancybox data-caption="위아래로 슬라이드 하면 닫힙니다."><img src="images/gallery_B_1.png" alt="이미지 설명" width="100%"> 
+                          </a>
+
+
+                          
+                        
+                        
+                        </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="gallery"> 컨셉사진_B_3 </div>
@@ -300,24 +315,24 @@
             <div class="swiper swiper_3 g3">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <img src="images/gallery_C_1.png" width="100%" alt="">
+                      <a href="images/gallery_C_1.png" data-fancybox data-caption="위아래로 슬라이드 하면 닫힙니다."> <img src="images/gallery_C_1.png" alt="이미지 설명" width="100%" style="border-radius: 15px;"> 
                     </div>
                     <div class="swiper-slide">
-                        <div class="gallery"> 컨셉사진_C_2 </div>
+                      <a href="images/gallery_C_2.jpg" data-fancybox data-caption="위아래로 슬라이드 하면 닫힙니다."> <img src="images/gallery_C_2.jpg" alt="이미지 설명" height="250px" style="border-radius: 15px;"> 
                     </div>
                     <div class="swiper-slide">
-                        <div class="gallery"> 컨셉사진_C_3 </div>
+                      <a href="images/gallery_C_3.jpg" data-fancybox data-caption="위아래로 슬라이드 하면 닫힙니다."> <img src="images/gallery_C_3.jpg" alt="이미지 설명" height="250px" style="border-radius: 15px;"> 
                     </div>
                     <div class="swiper-slide">
-                        <div class="gallery"> 컨셉사진_C_4 </div>
+                      <a href="images/gallery_C_4.jpg" data-fancybox data-caption="위아래로 슬라이드 하면 닫힙니다."> <img src="images/gallery_C_4.jpg" alt="이미지 설명" height="250px" style="border-radius: 15px;"> 
                     </div>
                     <div class="swiper-slide">
-                        <div class="gallery"> 컨셉사진_C_5 </div>
+                      <a href="images/gallery_C_5.jpg" data-fancybox data-caption="위아래로 슬라이드 하면 닫힙니다."> <img src="images/gallery_C_5.jpg" alt="이미지 설명" height="250px"  style="border-radius: 15px;"> </a>
                     </div>
                 </div>
 
             <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
+              <div class="swiper-pagination"></div>
             </div>
     </section>
 
@@ -350,11 +365,9 @@
         <button class="btn-etc" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
             <img  src="images/sendMassage.png" width="100%" alt="">
           </button>
-          <div class="collapse default-size" id="collapseExample">
-            <div class="well">
-              안녕하세요 김동영입니다 여기에 메시지를 보내주세요
-            </div>
-                    <div style="text-align: center;">
+          <div class="collapse default-size ft-l" id="collapseExample" style="display:block  margin-left: auto; margin-right: auto; width: 80vw; " >
+
+                    <div style="text-align: center;  border: 2px solid rgba(204, 139, 108, 0.626); border-radius: 15px; padding: 15px; width: 80vw;margin-bottom: 15px; margin-top: 15px;">
                         [메시지를 보낼 사람을 선택해주세요!]
                         <div >
                             <img src="images/header_pic_2.png" width="150px" height="150px" alt="" >
@@ -363,16 +376,16 @@
                         <div class="form-background">
                           <div class="form-white">
 
-                            <form>
+                            <form style="border: 30px #000;" >
                               <h3>메시지를 작성해주세요!</h3>
                               <p>보내는 사람</p>
                                <div >
-                                <input class="form-input w-100" placeholder="이름을 입력해주세요." type="text">
+                                <input class="form-input w-100 ft-l" placeholder= "이름을 입력해주세요."  type="text" style="font-size: 15px;">
                               </div>
                               <br>
-                                <textarea class="form-textarea w-100 h-50" placeholder="메시지를 입력해주세요."></textarea>
+                                <textarea class="form-textarea w-100 h-50 ft-l" placeholder="  메시지를 입력해주세요." style="font-size: 15px; padding-top: 15px; padding-left: 3px;"></textarea>
                                 <br>
-                                <button type="button" class="btn btn-primary">보내기</button>
+                                <button type="button" class="btn btn-primary" style="margin-top: 15px; width: 100px; height: 40px;">보내기</button>
                               </div>
                             </form>
 
@@ -388,7 +401,7 @@
     <button class="btn-etc" type="button" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
         <img  src="images/sendMoney.png" width="100%" alt="">
       </button>
-      <div class="collapse default-size" id="collapseExample2">
+      <div class="collapse default-size ft-l" id="collapseExample2">
         <div class="well">
           마음을 전하는 곳
         </div>
@@ -686,6 +699,13 @@ window.addEventListener('resize', () => {
 
 </script>
 
+<!-- 팬시박스 -->
+<script>
+  $(document).ready(function() {
+    $(".gallery a").fancybox();
+  });
+  </script>
+
 
 
 <!-- 갤러리 마지막 스크립트 -->
@@ -696,7 +716,7 @@ window.addEventListener('resize', () => {
   ScrollTrigger.defaults({
     // Defaults are used by all ScrollTriggers
     toggleActions: "restart pause resume pause", // Scoll effect Forward, Leave, Back, Back Leave
-    markers: true // Easaly remove markers for production 
+     // Easaly remove markers for production 
   });
   
   const timelineHeader = gsap.timeline({
