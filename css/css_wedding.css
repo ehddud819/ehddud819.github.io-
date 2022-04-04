@@ -40,14 +40,17 @@ html{
 
 .ft-s{
   font-size: small;
+  font-family: 'Jua', sans-serif;
 }
 
 .ft-m{
   font-size: medium;
+  font-family: 'Jua', sans-serif;
 }
 
 .ft-l{
   font-size: large;
+  font-family: 'Jua', sans-serif;
 }
 
 
@@ -275,7 +278,7 @@ background: white
 }
 
 .w-100{
-  width: 80%;
+  width: 100%;
   max-width: 735px;
 }
 
