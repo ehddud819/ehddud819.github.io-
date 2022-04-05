@@ -37,6 +37,18 @@ html{
   /* min-height: 700px; */
 }
 
+.one{
+  border-radius: 15px;
+}
+
+.right{
+  text-align: right;
+}
+
+.left{
+  text-align: left;
+}
+
 
 .ft-s{
   font-size: small;
