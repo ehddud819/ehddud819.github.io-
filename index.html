@@ -39,6 +39,16 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" type="text/css" media="screen" />
       <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
 
+      <!-- 3D 이미지 -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css"/>
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
+      <style>
+      #panorama {
+          width: 100%;
+          height: 400px;
+      }
+      </style>
+
 
 
 <!-- 폰트_goegu -->
@@ -470,8 +480,9 @@
                     <br>
                     <br>
                     
-                    <img class="one top" src="images/guide/outside_10.jpg" width="100%" alt="">
+                    <!-- <img class="one top" src="images/guide/outside_10.jpg" width="100%" alt=""> -->
                     <img class="one top" src="images/guide/outside_11.jpg" width="100%" alt="">
+                    <div id="panorama"></div>
                     <div class="ft-l top" >
                       <p>따라오시다 보면,</p>
                       <p>용산공원 쪽으로 가는 길이 보이는데요.</p>
@@ -511,6 +522,7 @@
                         
                         <img class="one top" src="images/guide/outside_16.jpg" width="100%" alt="">
                         <img class="one top" src="images/guide/outside_17.jpg" width="100%" alt="">
+                        
 
                         <div class="ft-l top" >
                           <p>여기 다리를 건너면</p>
@@ -1164,6 +1176,14 @@ function msg_2(){
 </script>
 
 
+
+<!-- 3d 이미지_1 -->
+<script>
+  pannellum.viewer('panorama', {
+      "type": "equirectangular",
+      "panorama": "images/3d_map.jpg"
+  });
+  </script>
 
 
 
