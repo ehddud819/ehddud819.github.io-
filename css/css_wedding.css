@@ -14,7 +14,7 @@ html{
 }
 
 .swiper {
-  width: 95vw;
+  width: 100%;
   max-width: 768px;
   /* min-height: 700px; */
   overflow-x: hidden;
@@ -28,6 +28,7 @@ html{
 }
 
 
+
 .swiper-slide {
   width: 95vw;
   max-width: 768px;
@@ -39,6 +40,10 @@ html{
 
 .one{
   border-radius: 15px;
+}
+
+.top{
+  margin-top: 15px;
 }
 
 .right{
