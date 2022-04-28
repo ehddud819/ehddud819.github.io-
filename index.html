@@ -55,6 +55,7 @@
       </style>
 
       <!-- Global site tag (gtag.js) - Google Analytics -->
+
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-RYNFBSTP47"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -62,6 +63,8 @@
       gtag('js', new Date());
 
       gtag('config', 'G-RYNFBSTP47');
+      gtag('event', '오시는길 클릭', {
+        'event_category' : '컨텐츠확인'});
     </script>
 
 
@@ -107,6 +110,11 @@
 
 
 <body style="overflow-x: hidden">
+
+  <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P7C7LHD"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
 
 
   
@@ -284,7 +292,7 @@
 <section class="default-size" style="position: relative; z-index: 300; text-align: center;">
  
 <!-- 인사말 -->
-  <button class="btn-etc" type="button" data-toggle="collapse" data-target="#collapseExample_1" aria-expanded="false" aria-controls="collapseExample_1">
+  <button class="btn-etc" type="button" data-toggle="collapse" data-target="#collapseExample_1" aria-expanded="false" aria-controls="collapseExample_1" onclick="ga('send’, ‘event’, ‘모바일전화연결’, ‘버튼클릭’, ‘오피스’);”>
     <div class="left" style="margin-left: 5px; margin-right: 5px;" >
       <img class="one" src="images/guide/hello_1.jpg" width="100%" alt="">
     </div>
@@ -682,27 +690,12 @@
 </div>
 
 
-
-
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
     <br>
     <br>
     
-
-
-    
-
-
 
     <!-- 오시는길안내 페이지 -->
-    <section class="default-size" style="position: relatives; height: 100%; margin-top: 100px;">
+    <section class="default-size" style="position: relatives; height: 100%; margin-top: 50px;">
         <div style="z-index: 200;">
             <div class="one" style="z-index: 200; background-color: whitesmoke; width: 90vw; max-width: 768px; position: relative; margin-left: auto; margin-right: auto; ">
 
