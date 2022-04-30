@@ -284,7 +284,8 @@
   
  
 <!-- 인사말 -->
-  <button class="btn-etc" type="button" data-toggle="collapse" data-target="#collapseExample_1" aria-expanded="false" aria-controls="collapseExample_1" >
+  <button class="btn-etc" type="button" data-toggle="collapse" data-target="#collapseExample_1" aria-expanded="false" aria-controls="collapseExample_1" onclick="window.scrollBy({ left: 0, top: 300, behavior: 'smooth' });" >
+    
     <div  class="left" style="margin-left: 5px; margin-right: 5px;" >
       <img class="one" src="images/guide/hello_1.jpg" width="100%" alt="">
     </div>
@@ -385,9 +386,9 @@
 
 <!-- new_오시는길 안내 -->
 
-<button class="btn-etc" id="guide_btn" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+<button class="btn-etc" id="guide_btn" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" onclick="window.scrollBy({ left: 0, top: 300, behavior: 'smooth' });">
   <div class="left" style="margin-left: 5px; margin-right: 5px;" >
-    <img class="one" src="images/guide/main_banner.jpg" width="100%" alt="">
+    <a href="#dd"><img class="one" src="images/guide/main_banner.jpg" width="100%" alt=""></a>
   </div>
 
 </button>
@@ -396,86 +397,100 @@
 <br>
 
 <div class="collapse default-size" id="collapseExample" style="display:block  margin-left: auto; margin-right: auto; width: 80vw; " >
+  <hr style="height:1px;border:none;color:#333;background-color:#333;" />
+  <div class="ft-l">교통수단은 어느것을 이용할 예정이신가요?</div>
+  <p></p>
   <ol class="breadcrumb ft-1">
-    <li><a href="#" class="ft-1" style="font-size: 20px;">주차장 이용</a></li>
-    <li><a href="#" class="ft-1" style="font-size: 20px;">지하철 이용</a></li>
+    <li class="ft-l"><a class="ft-1" id="move_1" style="font-size: 20px; color: #337ab7; " 
+      onclick="
+      document.getElementById('parking_guide').style.display = 'block'; 
+      document.getElementById('move_1').style.color = 'black'; 
+      document.getElementById('move_2').style.color = '#337ab7'; 
+      document.getElementById('train_guide').style.display = 'none';
+      window.scrollBy({ left: 0, top: 300, behavior: 'smooth' });
+      "
+      >
+      주차장 이용</a></li> 
+
+    <li class="ft-l"><a class="ft-1" id="move_2" style="font-size: 20px;" 
+      onclick="
+        document.getElementById('parking_guide').style.display = 'none'; 
+        document.getElementById('move_2').style.color = 'black'; 
+         document.getElementById('move_1').style.color = '#337ab7'; 
+        document.getElementById('train_guide').style.display = 'block';" 
+        >지하철 이용</a></li>
   </ol>
-  <img class="one top" src="images/guide/parking_1.jpg" width="100%" alt="">
+  <hr style="height:1px;border:none;color:#333;background-color:#333;" />
   <br>
   <br>
-  <div class="ft-l top" >
-    <p>차량 이용시 국립중앙박물관 쪽에 해주세요!</p>
-    <p>다른 주차장은 주차가 어렵습니다!!</p>   
-    </div>
-    <br>
-    <br>
-    <br>
-  <div class="ft-l top" >
-    <p>차량 이용시 국립중앙박물관 쪽에 해주세요!</p>
-    <p>다른 주차장은 주차가 어렵습니다!!</p>   
-    </div>
-    <br>
-    <br>
-    <br>
+  
+  <section id="parking_guide" style="display: none;">
+      <img class="one top"    src="images/guide/parking_1.jpg" width="100%" alt="">
+      <br>
+      <br >
 
-  <img class="one top" src="images/guide/parking_map.jpg" width="100%" alt="">
-  <div class="ft-l top" >
-    <p>주차장 지도입니다.</p>
-    <p>눈에 보이시는 에스컬레이터(B,C,D 중 하나)</p>
-    <p>타고 올라오시면 됩니다.</p>
-    </div>
-    <br>
-    <br>
-    <br>
-    
-    <img class="one top" src="images/guide/parking_3.jpg" width="100%" alt="">
-    <div class="ft-l top" >
-      <p>에스컬레이터 타고 맨위로....</p>
+  
+      <div class="ft-l top" >
+      <p>차량 이용시 국립중앙박물관 쪽에 해주세요!</p>
+      <p>다른 주차장은 주차가 어렵습니다!!</p>   
       </div>
+      <br>
+      <br>
+      <br>
+    <div class="ft-l top" >
+      <p>차량 이용시 국립중앙박물관 쪽에 해주세요!</p>
+      <p>다른 주차장은 주차가 어렵습니다!!</p>   
+      </div>
+      <br>
+      <br>
+      <br>
 
+    <img class="one top" src="images/guide/parking_map.jpg" width="100%" alt="">
+    <div class="ft-l top" >
+      <p>주차장 지도입니다.</p>
+      <p>눈에 보이시는 에스컬레이터(B,C,D 중 하나)</p>
+      <p>타고 올라오시면 됩니다.</p>
+      </div>
       <br>
       <br>
       <br>
       
-      <img class="one top" src="images/guide/outside_1.jpg" width="100%" alt="">
-      <img class="one top" src="images/guide/outside_2.jpg" width="100%" alt="">
+      <img class="one top" src="images/guide/parking_3.jpg" width="100%" alt="">
       <div class="ft-l top" >
-        <p>밖으로 나오시면 이러한 풍경이 있어요.</p>
-        <p>일단 빛이 보이는곳으로 나오세요!</p>
+        <p>에스컬레이터 타고 맨위로....</p>
         </div>
 
         <br>
         <br>
         <br>
         
-        <img class="one top" src="images/guide/outside_3.jpg" width="100%" alt="">
-        <img class="one top" src="images/guide/outside_4.jpg" width="100%" alt="">
+        <img class="one top" src="images/guide/outside_1.jpg" width="100%" alt="">
+        <img class="one top" src="images/guide/outside_2.jpg" width="100%" alt="">
         <div class="ft-l top" >
-          <p>나오시다보면 앞에 엘레베이터가 있어요.</p>
-          <p>동그라미 표시된 쪽으로 오시면되요.</p>
+          <p>밖으로 나오시면 이러한 풍경이 있어요.</p>
+          <p>일단 빛이 보이는곳으로 나오세요!</p>
           </div>
 
           <br>
           <br>
           <br>
           
-          <img class="one top" src="images/guide/outside_5.jpg" width="100%" alt="">
-          <img class="one top" src="images/guide/outside_6.jpg" width="100%" alt="">
+          <img class="one top" src="images/guide/outside_3.jpg" width="100%" alt="">
+          <img class="one top" src="images/guide/outside_4.jpg" width="100%" alt="">
           <div class="ft-l top" >
-            <p>엘레베이터를 타셔도 되고</p>
-            <p>왼쪽 계단으로 내려오셔도 됩니다</p>
+            <p>나오시다보면 앞에 엘레베이터가 있어요.</p>
+            <p>동그라미 표시된 쪽으로 오시면되요.</p>
             </div>
-
 
             <br>
             <br>
             <br>
             
-            <img class="one top" src="images/guide/outside_7_0.jpg" width="100%" alt="">
-            <img class="one top" src="images/guide/outside_7_1.jpg" width="100%" alt="">
+            <img class="one top" src="images/guide/outside_5.jpg" width="100%" alt="">
+            <img class="one top" src="images/guide/outside_6.jpg" width="100%" alt="">
             <div class="ft-l top" >
-              <p>내려오시면 거울못 식당을 축으로</p>
-              <p>쭉 도셔서~</p>
+              <p>엘레베이터를 타셔도 되고</p>
+              <p>왼쪽 계단으로 내려오셔도 됩니다</p>
               </div>
 
 
@@ -483,11 +498,11 @@
               <br>
               <br>
               
-              <img class="one top" src="images/guide/outside_8.jpg" width="100%" alt="">
-              <img class="one top" src="images/guide/outside_9.jpg" width="100%" alt="">
+              <img class="one top" src="images/guide/outside_7_0.jpg" width="100%" alt="">
+              <img class="one top" src="images/guide/outside_7_1.jpg" width="100%" alt="">
               <div class="ft-l top" >
-                <p>눈에 보이시는 길로 계속 따라오시면 됩니다.</p>
-                
+                <p>내려오시면 거울못 식당을 축으로</p>
+                <p>쭉 도셔서~</p>
                 </div>
 
 
@@ -495,53 +510,85 @@
                 <br>
                 <br>
                 
-                <!-- <img class="one top" src="images/guide/outside_10.jpg" width="100%" alt=""> -->
-                <img class="one top" src="images/guide/outside_11.jpg" width="100%" alt="">
-                <div id="panorama"></div>
+                <img class="one top" src="images/guide/outside_8.jpg" width="100%" alt="">
+                <img class="one top" src="images/guide/outside_9.jpg" width="100%" alt="">
                 <div class="ft-l top" >
-                  <p>따라오시다 보면,</p>
-                  <p>왼쪽에 돌들이 쌓여 있는 탑이 있는데요.</p>
-                  <p>이쪽 오솔길로 들어오시면 됩니다.</p>
+                  <p>눈에 보이시는 길로 계속 따라오시면 됩니다.</p>
                   
                   </div>
 
-                  
+
                   <br>
                   <br>
                   <br>
                   
-                  <img class="one top" src="images/guide/outside_11_1.jpg" width="100%" alt="">
-                  <p class="ft-l top" ><오른쪽></p>
-                  <img class="one top" src="images/guide/outside_11_2.jpg" width="100%" alt="">
-                  <p class="ft-l top" ><왼쪽></p>
-                  <img class="one top" src="images/guide/outside_11_3.jpg" width="100%" alt="">
-                  <p class="ft-l top" ><쭉~></p>
+                  <!-- <img class="one top" src="images/guide/outside_10.jpg" width="100%" alt=""> -->
+                  <img class="one top" src="images/guide/outside_11.jpg" width="100%" alt="">
+                  <div id="panorama"></div>
                   <div class="ft-l top" >
-                    <p>위 사진대로 오른쪽, 왼쪽, 쭉 </p>
-                    <p>오시면 됩니다.</p>
+                    <p>따라오시다 보면,</p>
+                    <p>왼쪽에 돌들이 쌓여 있는 탑이 있는데요.</p>
+                    <p>이쪽 오솔길로 들어오시면 됩니다.</p>
                     
-                  </div>
-                    
+                    </div>
 
+                    
                     <br>
                     <br>
                     <br>
                     
-                    <img class="one top" src="images/guide/outside_11_4.jpg" width="100%" alt="">
+                    <img class="one top" src="images/guide/outside_11_1.jpg" width="100%" alt="">
+                    <p class="ft-l top" ><오른쪽></p>
+                    <img class="one top" src="images/guide/outside_11_2.jpg" width="100%" alt="">
+                    <p class="ft-l top" ><왼쪽></p>
+                    <img class="one top" src="images/guide/outside_11_3.jpg" width="100%" alt="">
+                    <p class="ft-l top" ><쭉~></p>
                     <div class="ft-l top" >
-                      <p>쭉 오시다보면, 다리가 있는데요.</p>
-                      <p>여길 건너서 앞으로 조금만 더 오시면~</p>
-                      <p>야외결혼식장이 보이실 겁니다~!</p>
+                      <p>위 사진대로 오른쪽, 왼쪽, 쭉 </p>
+                      <p>오시면 됩니다.</p>
+                      
+                    </div>
+                      
+
+                      <br>
+                      <br>
+                      <br>
+                      
+                      <img class="one top" src="images/guide/outside_11_4.jpg" width="100%" alt="">
+                      <div class="ft-l top" >
+                        <p>쭉 오시다보면, 다리가 있는데요.</p>
+                        <p>여길 건너서 앞으로 조금만 더 오시면~</p>
+                        <p>야외결혼식장이 보이실 겁니다~!</p>
+                        
+                      </div>
+                      <br>
+                      <br>
+                      <br>
+                  </section>
+
+                  <!-- 지하철 이용 시 -->
+                  <section id="train_guide" style="display: none"; >
+                    
+                    <div class="ft-l top" >
+                      <p>지하철 이용 준비중...</p>
+
                       
                     </div>
                     <br>
                     <br>
                     <br>
-              </div>
+                    <br>
+
+                  </section>
+
+
+                </div>
+    
+
 
               
 <!-- 마지막 배너 -->
-<button class="btn-etc" id="museum_btn" type="button" data-toggle="collapse" data-target="#collapseExample_3" aria-expanded="false" aria-controls="collapseExample_3" style="position: sticky ; margin-top: -20px;" >
+<button class="btn-etc" id="museum_btn" type="button" data-toggle="collapse" data-target="#collapseExample_3" aria-expanded="false" aria-controls="collapseExample_3" style="position: sticky ; margin-top: -20px;" onclick="window.scrollBy({ left: 0, top: 300, behavior: 'smooth' });" >
   <div class="left" style="margin-left: 5px; margin-right: 5px;" >
     <img class="one" src="images/guide/main2_banner.jpg" width="100%" alt="">
   </div>
@@ -693,7 +740,7 @@
 
     <footer style="position: fixed; top: 92%; z-index: 999; margin: 0 auto; left: 0; right: 0;">
       <a href="#main_top" class="footer glyphicon glyphicon-circle-arrow-up" aria-hidden="true" style="font-size: 35px; text-decoration-line: none; "></a>
-      <p style="font-size: 5px;">last_update: 2022.04.29</p></footer>
+      <p style="font-size: 5px;">last_update: 2022.04.30</p></footer>
     
     
 
@@ -998,6 +1045,14 @@ window.addEventListener('resize', () => {
    -->
 
 
+   <script>
+
+     function parking_guide_event {
+       document.getElementById('parking_guide_event').style.display = 'block';
+     }
+
+
+   </script>
 
 
 
@@ -1049,6 +1104,16 @@ if (slideEndX - slideBeginX > 0) {
   });
   </script>
 
+
+<!-- 이동 스크롤 -->
+<script>
+
+const scrollMove = () => {
+  let location = document.querySelector("#guide_btn").offsetTop;
+  window.scrollTo({ top: location, behavior: "smooth" });
+  };
+
+</script>
 
 </body>
 
