@@ -2,8 +2,9 @@ html{
   overflow-x: hidden;
   -ms-content-zooming: none;
   -ms-touch-action: pan-x pan-y;
-
+  scroll-behavior: smooth;
 }
+
 
 .body{
   max-width: 768px;
@@ -75,6 +76,10 @@ html{
   font-family: 'Dongle', sans-serif;
 }
 
+.dongle{
+  font-size: 20px;
+  font-family: 'Dongle', sans-serif;
+}
 
 
 .gallery{
@@ -323,4 +328,68 @@ button {
   outline: 0;
   box-shadow: none;
   border: 0;
+}
+
+
+
+
+.main-tool-bar {
+  height: 60px;
+  background: rgb(255, 255, 255);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  border-bottom-style:solid; border-bottom-color:rgb(219, 141, 141); border-bottom-width:3px;
+  transition: ease 0.4s;
+  &--scrolled {
+    height: 40px;
+  }
+}
+
+
+.fix_none {
+  display: none;
+}
+
+.nav_guide_parking{
+  display: block;
+  background: rgb(255, 255, 255);
+}
+
+
+.nav-link_1{
+  background-color: rgb(255, 255, 255);
+}
+
+.li_width{
+  width: 10%;
+  color: black;
+  vertical-align: middle;
+}
+
+.li_{
+  width: 10vw;
+  color: black;
+  vertical-align: middle;
+}
+
+.li_padding{
+  padding-top: 9px;
+  padding-left: 0%;
+  padding-right: 0%;
+  margin-left: 0%;
+  margin-right: 0%;
+}
+
+
+
+.no-padding {
+  padding-left: 2 !important;
+  padding-right: 2 !important;
 }
