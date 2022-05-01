@@ -9,6 +9,7 @@
   <meta content="yes" name="apple-mobile-web-app-capable" />
   <meta content="minimum-scale=1.0, width=device-width, maximum-scale=1, user-scalable=no" name="viewport" />
   <meta name="description" content="안녕하세요 방갑습니다.">
+  <meta http-equiv="Cache-Control" content="no-cache"><meta http-equiv="Pragma" content="no-cache">
 
 
   <!-- Google Tag Manager -->
@@ -25,8 +26,6 @@
   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
@@ -11031,117 +11030,6 @@
 
     </script>
 
-    <!-- 갤러리_1 스와이퍼 -->
-    <script>
-      const swiper_1 = new Swiper('.swiper_1', {
-        // Optional parameters
-        direction: 'horizontal',
-        loop: true,
-
-        // If we need pagination
-        pagination: {
-          el: '.swiper-pagination',
-        },
-
-        // And if we need scrollbar
-        scrollbar: {
-          el: '.swiper-scrollbar',
-        },
-      });
-
-    </script>
-
-    <!-- 갤러리_2 스와이퍼 -->
-    <script>
-      const swiper_2 = new Swiper('.swiper_2', {
-        // Optional parameters
-        direction: 'horizontal',
-        loop: true,
-
-        // If we need pagination
-        pagination: {
-          el: '.swiper-pagination',
-        },
-
-        // And if we need scrollbar
-        scrollbar: {
-          el: '.swiper-scrollbar',
-        },
-      });
-
-    </script>
-
-    <!-- 갤러리_3 스와이퍼 -->
-    <script>
-      const swiper_3 = new Swiper('.swiper_3', {
-        // Optional parameters
-        direction: 'horizontal',
-        loop: true,
-
-        // If we need pagination
-        pagination: {
-          el: '.swiper-pagination',
-        },
-
-        // And if we need scrollbar
-        scrollbar: {
-          el: '.swiper-scrollbar',
-        },
-      });
-
-    </script>
-
-    <!-- 스크롤트리거 -->
-    <script>
-
-      gsap.registerPlugin(ScrollTrigger);
-
-      gsap.utils.toArray(".panel").forEach((panel, i) => {
-        ScrollTrigger.create({
-          trigger: panel,
-          start: "top top",
-          pin: true,
-          // **************페이지 자동이동
-          // snap : 1,
-          // delay : 5,
-          //     snap: {
-          //     snapTo: 1, // snap to the closest label in the timeline
-          //     duration: {min: 0.1, max: 0.8}, // the snap animation should be at least 0.2 seconds, but no more than 3 seconds (determined by velocity)
-          //     delay: NaN, // wait 0.2 seconds from the last scroll event before doing the snapping
-          //     ease: "power2.inOut" // the ease of the snap animation ("power3" by default)
-          //   },
-          pinSpacing: false
-        });
-
-
-
-      });
-
-
-
-    </script>
-
-    <!-- 글씨나타나기 -->
-    <!-- <script>
-
-var txtTimeline = gsap.timeline({
-    scrollTrigger: {
-     trigger : ".txt1",
-     start : "top 80%",
-     end : "top top",
-    //  toggleActions : "play reverse none reverse",
-     // markers: {startColor: "red", endColor: "blue", fontSize: "20px"},
-      onLeave: (function() {
-       return console.log("출력");
-      })// gsap 요소를 만들고
-    }
- });
- txtTimeline.from('.txt1', { opacity: 0, y: 5, duration : 1})
- txtTimeline.from('.txt2', { opacity: 0, y: 5, duration : 1})
- txtTimeline.from('.txt3', { opacity: 0, y: 5, duration : 1})
-
-</script> -->
-
 
 
 
@@ -11159,24 +11047,10 @@ var txtTimeline = gsap.timeline({
         document.documentElement.style.setProperty('--vh', `${vh}px`);
       });
 
-
     </script>
+ 
 
 
-    <script> let vw = window.innerHeight * 0.01; document.documentElement.style.setProperty('--vw', `${vw}px`); </script>
-    <script>
-
-      let vw = window.innerHeight * 0.01; document.documentElement.style.setProperty('--vw', `${vw}px`);
-
-      // We listen to the resize event
-      window.addEventListener('resize', () => {
-        // We execute the same script as before
-        let vw = window.innerHeight * 0.01;
-        document.documentElement.style.setProperty('--vw', `${vw}px`);
-      });
-
-
-    </script>
 
     <!-- 팬시박스 -->
     <script>
@@ -11187,110 +11061,6 @@ var txtTimeline = gsap.timeline({
 
 
 
-    <!-- 갤러리 마지막 스크립트 -->
-    <script>
-
-      gsap.registerPlugin(ScrollTrigger);
-
-      ScrollTrigger.defaults({
-        // Defaults are used by all ScrollTriggers
-        toggleActions: "restart pause resume pause", // Scoll effect Forward, Leave, Back, Back Leave
-        // Easaly remove markers for production 
-      });
-
-      const timelineHeader = gsap.timeline({
-        scrollTrigger: {
-          id: "ZOOM", // Custom label to the marker
-          trigger: "#header-zoom", // What element triggers the scroll
-          scrub: 0.5, // Add a small delay of scrolling and animation. `true` is direct
-          start: "top top", // Start at top of Trigger and at the top of the viewport
-          end: "bottom 20%", // The element is 500px hight and end 50px from the top of the viewporttop
-          pin: true, // Pin the element true or false
-          pinSpacing: false
-        }
-      });
-
-      timelineHeader
-        .to(".gallery_main", {
-          scale: 0.9
-        }, "sameTime")
-
-        .to(".gallery_main", {
-          opacity: 0
-        })
-
-        .to(".gallery_text", {
-          opacity: 1
-        }, 1.1)
-
-
-
-    </script>
-
-
-
-    <!-- 
-  <script>
-  
-      gsap.registerPlugin(ScrollTrigger);
-      gsap.from(".gtxt1", {
-        scrollTrigger: {
-          trigger: ".gtxt1",
-          toggleActions: "restart pause restart pause"
-        },
-        x: 100 })
-      </script>
-  <script>
-  
-      gsap.registerPlugin(ScrollTrigger);
-      gsap.from(".gtxt2", {
-        scrollTrigger: {
-          trigger: ".gtxt2",
-          toggleActions: "restart pause restart pause"
-        },
-        x: -100 })
-      </script>
-  <script>
-  
-      gsap.registerPlugin(ScrollTrigger);
-      gsap.from(".gtxt3", {
-        scrollTrigger: {
-          trigger: ".gtxt3",
-          toggleActions: "restart pause restart pause"
-        },
-        x: 100 })
-      </script>
-  <script>
-  
-      gsap.registerPlugin(ScrollTrigger);
-      gsap.from(".gtxt4", {
-        scrollTrigger: {
-          trigger: ".gtxt4",
-          toggleActions: "restart pause restart pause"
-        },
-        x: -100 })
-      </script>
-  <script>
-  
-      gsap.registerPlugin(ScrollTrigger);
-      gsap.from(".gtxt5", {
-        scrollTrigger: {
-          trigger: ".gtxt5",
-          toggleActions: "restart pause restart pause"
-        },
-        x: 100 })
-      </script>
-  <script>
-  
-      gsap.registerPlugin(ScrollTrigger);
-      gsap.from(".gtxt6", {
-        scrollTrigger: {
-          trigger: ".gtxt6",
-          toggleActions: "restart pause restart pause"
-        },
-        y: 100 })
-      </script>
-   -->
 
 
 
@@ -11327,27 +11097,6 @@ var txtTimeline = gsap.timeline({
 
 
 
-    <!-- 3d 이미지_1 -->
-    <script>
-      pannellum.viewer('panorama', {
-        "type": "equirectangular",
-        "panorama": "images/3d_map.jpg"
-      });
-    </script>
-
-    <script>
-      pannellum.viewer('panorama_1', {
-        "type": "equirectangular",
-        "panorama": "images/guide/park_wedding.jpg"
-      });
-    </script>
-
-
-
-
-
-
-    </script>
 
 
     <script>
@@ -11374,6 +11123,7 @@ var txtTimeline = gsap.timeline({
           var scroll = $(window).scrollTop();
           if (scroll > 1300) {
             $(".nav-link_1").css("background-color", "rgb(30, 30, 83)");
+            $(".nav-link_4").css("background-color", "rgb(255, 255, 255)");
           }
           else {
             $(".nav-link_1").css("background-color", "rgb(255, 255, 255)");
