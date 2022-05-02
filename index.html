@@ -319,7 +319,7 @@
           <div class="default-size" style="margin-top: -30px;"> 
           <iframe src="images/svg/park_map3.svg" width="100%" height="400px"  frameborder="0" style="max-width: 768px;"></iframe>                 
           </div>
-          <div style="font-size: 1.3rem; margin: auto; font-family: 'Jua', sans-serif; line-height: 50%;">
+          <div style="font-size: 1.5rem; margin: auto; font-family: 'Jua', sans-serif; line-height: 50%;">
             <p> ■ 주차는 <n style="color: rgb(171, 113, 113);"> 국립중앙 박물관 주차장 </n>으로 해주세요.</p>
             <p> ※ 다른 주차장은 혼잡하여 주차하기가 어렵습니다.</p>
             <br>
@@ -376,7 +376,7 @@
 
     </button>
 
-    <div class="collapse default-size" id="collapseExample_1"
+    <div class="collapse in default-size" id="collapseExample_1"
       style="margin-left: auto; margin-right: auto; width: 100%; ">
       <br>
       <br>
@@ -1042,30 +1042,35 @@
 
 
 
+    <!-- nav_주차장 가이드 -->
+
+
+
 
     <script>
-    var section2Offset = $('#parking_guide_1').offset();
       $(document).ready(function () {
         $(window).scroll(function () {
           var scroll = $(window).scrollTop();
-          if (scroll > section2Offset) {
-            $(".main-tool-bar").css("display", "none");
+          if (scroll < 6300 && scroll > 4000) {
+            $(".main-tool-bar").css("display", "flex");
           }
           else {
-            $(".main-tool-bar").css("display", "flex");
+            $(".main-tool-bar").css("display", "none");
           }
         })
       })
 
     </script>
 
-    <!-- nav_주차장 가이드 -->
+
+
+<!-- 네비게이션 -->
     <script>
 
       $(document).ready(function () {
         $(window).scroll(function () {
           var scroll = $(window).scrollTop();
-          if (scroll > 1300) {
+          if (scroll > 4000 ) {
             $(".nav-link_1").css("background-color", "rgb(30, 30, 83)");
           }
           else {
@@ -1076,13 +1081,15 @@
 
     </script>
 
+    
+
     <!-- nav_박물관 가이드 -->
     <script>
 
       $(document).ready(function () {
         $(window).scroll(function () {
           var scroll = $(window).scrollTop();
-          if (scroll > 1900) {
+          if (scroll > 4600) {
             $(".nav-link_1").css("background-color", "rgb(255, 255, 255)");
             $(".nav-link_2").css("background-color", "rgb(30, 30, 83)");
           }
@@ -1101,7 +1108,7 @@
       $(document).ready(function () {
         $(window).scroll(function () {
           var scroll = $(window).scrollTop();
-          if (scroll > 2500) {
+          if (scroll > 5300) {
             $(".nav-link_2").css("background-color", "rgb(255, 255, 255)");
             $(".nav-link_3").css("background-color", "rgb(30, 30, 83)");
           }
@@ -1121,7 +1128,7 @@
   $(document).ready(function () {
     $(window).scroll(function () {
       var scroll = $(window).scrollTop();
-      if (scroll > 3000) {
+      if (scroll > 6000) {
         $(".nav-link_3").css("background-color", "rgb(255, 255, 255)");
         $(".nav-link_4").css("background-color", "rgb(30, 30, 83)");
       }
@@ -1130,8 +1137,6 @@
       }
     })
   })
-
-
 
 </script>
 
